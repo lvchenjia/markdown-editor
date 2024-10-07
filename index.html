@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown 编辑器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Markdown 编辑器</h1>
+            <div class="view-buttons">
+                <button id="edit-mode" class="active">编辑</button>
+                <button id="preview-mode">预览</button>
+                <button id="split-mode">分屏</button>
+            </div>
+        </header>
+        <div id="editor">
+            <div class="pane" id="edit-pane">
+                <h2 id="editLabel">编辑</h2>
+                <textarea id="markdown-input" placeholder="在这里输入 Markdown..."></textarea>
+            </div>
+            <div class="pane" id="preview-pane">
+                <h2 id="previewLabel">预览</h2>
+                <div id="preview" class="markdown-body"></div>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

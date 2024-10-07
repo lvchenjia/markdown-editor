@@ -1,0 +1,41 @@
+{
+  "name": "electron-markdown-editor",
+  "version": "1.0.0",
+  "description": "A simple Markdown editor built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.yourcompany.markdown-editor",
+    "productName": "Markdown Editor",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "extendInfo": {
+        "CFBundleName": "Markdown Editor",
+        "CFBundleDisplayName": "Markdown Editor"
+      }
+    }
+  },
+  "keywords": [
+    "electron",
+    "markdown",
+    "editor"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^4.0.0"
+  },
+  "devDependencies": {
+    "electron": "^13.0.0",
+    "electron-builder": "^25.1.7",
+    "electron-reloader": "^1.2.1"
+  }
+}
